@@ -15,7 +15,7 @@ body {
     background-image: url('images/background-image.jpeg'); /* Adjust the filename and extension */
     background-size: cover;
     background-position: center;
-    filter: blur(5000px); /* Adjust the blur strength */
+    filter: blur(500px); /* Adjust the blur strength */
 }
 
 header {
