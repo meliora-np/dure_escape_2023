@@ -3,6 +3,10 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.5s;
+    background-image: url('images/background.jpg'); /* Adjust the filename and extension */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header {
