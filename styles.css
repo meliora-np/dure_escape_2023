@@ -1,5 +1,4 @@
 body {
-    z-index: 1;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -16,7 +15,7 @@ body {
     background-image: url('images/background-image.jpeg'); /* Adjust the filename and extension */
     background-size: cover;
     background-position: center;
-    filter: blur(50px); /* Adjust the blur strength */
+    filter: blur(5000px); /* Adjust the blur strength */
 }
 
 header {
