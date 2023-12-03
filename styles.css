@@ -19,7 +19,8 @@ body {
 }
 
 header {
-    color: #fff;
+    z-index: 1;
+    ;color: #fff;
     padding: 1em;
     text-align: center;
 }
