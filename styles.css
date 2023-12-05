@@ -20,9 +20,6 @@ body.index {
     font-family: 'HeirofLightFont';
     background-image: url('images/background-image.jpeg');
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 body.index::before {
@@ -63,7 +60,7 @@ header.index {
     font-family: 'HeirofLightFont';
     z-index: 1;
     color: #fff;
-    text-align: center;
+    padding: 1em;
 }
 
 header.laptop {
@@ -99,10 +96,9 @@ button {
     margin-top: 1em;
     border: none;
     cursor: pointer;
-    width: 80%; /* Adjust the width of the buttons as needed */
+    width: auto; /* Adjust the width of the buttons as needed */
     max-width: 100% /* Set a maximum width if desired */
 }
-
 
 button:hover {
     background-color: #777;
@@ -176,6 +172,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: small;
 }
 
 /* Mobile Styles */
