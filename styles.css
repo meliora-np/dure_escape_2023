@@ -18,11 +18,10 @@
 .story-button button {
     background-color: #555;
     color: #fff;
-    padding: 1em; /* Adjusted padding for better spacing */
+    padding: 10px;
     border: none;
     cursor: pointer;
     margin-bottom: 50px;
-    width: 100%; /* Adjusted width to 100% */
 }
 
 .story-button button img {
@@ -121,11 +120,11 @@ h1, h2, p, label {
 button {
     background-color: #555;
     color: #fff;
-    padding: 1em; /* Adjusted padding for better spacing */
+    padding: 1em;
     border: none;
     cursor: pointer;
-    width: 100%; /* Adjusted width to 100% */
-    max-width: 100%; /* Set a maximum width if desired */
+    width: 100%; /* Adjust the width of the buttons as needed */
+    max-width: 100% /* Set a maximum width if desired */
 }
 
 /*
@@ -182,9 +181,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1em;
-    /* Removed fixed width for full width */
     position: fixed;
     bottom: 0;
+    width: 100%;
 }
 
 /* Mobile Styles */
@@ -196,11 +195,6 @@ footer {
 
     .nav-button {
         font-size: 18px; /* Adjust the font size of the button */
-    }
-
-    .story-button {
-        text-align: center;
-        margin-bottom: 50px;
     }
 
     .story-button button {
