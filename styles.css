@@ -36,7 +36,6 @@ body.index::before {
     height: 100%;
     background: url('images/background-image.jpeg') no-repeat center center fixed; /* Set the background image */
     background-size: cover; /* Zoom and cover the entire container */
-    /* filter: brightness(0.7);  Adjust the brightness value as needed */
     z-index: -1;
 }
 
