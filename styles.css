@@ -21,6 +21,7 @@ body {
 body.index {
     font-family: 'HeirofLightFont';
     background-image: url('images/background-image.jpeg');
+    position: relative;
 }
 
 body.index::before {
