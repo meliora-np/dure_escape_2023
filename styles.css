@@ -180,14 +180,14 @@ footer {
         background-size: cover; /* Zoom and cover the entire container */
     }
 
-/*     .story-button button {
-        max-width: 100%; /* Remove max-width for mobile *
-        margin-bottom: 20px; /* Set the margin between buttons for mobile *
-        padding: 0.5em; /* Adjusted padding for better spacing *
+     .story-button button {
+        max-width: 100%; /* Remove max-width for mobile */
+        margin-bottom: 20px; /* Set the margin between buttons for mobile */
+        padding: 0.5em; /* Adjusted padding for better spacing */
     }
 
     .story-button button img {
         max-width: 100%;
-        max-height: auto; /* Set a maximum height for the button images *
-    }*/
+        max-height: auto; /* Set a maximum height for the button images */
+    }
 } 
