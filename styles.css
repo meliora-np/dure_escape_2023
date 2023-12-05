@@ -187,7 +187,7 @@ footer {
 }
 
 /* Mobile Styles */
-@media (max-width: 600px) {
+@media (max-width: 100%) {
     .story-button button {
         width: 80%; /* Adjust the width of the buttons for mobile */
         max-width: none; /* Remove max-width for mobile */
