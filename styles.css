@@ -188,11 +188,13 @@ footer {
 
     .story-button button {
         width: 80%; /* Adjust the width of the buttons for mobile */
+        max-height: auto;
         margin-bottom: 20px; /* Set the margin between buttons for mobile */
         padding: 0.5em; /* Adjusted padding for better spacing */
     }
 
     .story-button button img {
         max-width: 80%;
+        max-height: auto;
     }
 }
