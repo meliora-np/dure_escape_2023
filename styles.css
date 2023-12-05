@@ -187,9 +187,15 @@ footer {
 }
 
 /* Mobile Styles */
-@media (max-width: 100px) {
+@media (max-width: 600px) {
+    body.index::before,
+    body.laptop::before {
+        background-size: cover; /* Zoom and cover the entire container */
+    }
+
     .story-button button {
         width: 80%; /* Adjust the width of the buttons for mobile */
-        max-width: none; /* Remove max-width for mobile */
+        max-width: 300px; /* Set a maximum width if desired */
+        margin-bottom: 20px; /* Set the margin between buttons for mobile */
     }
 }
