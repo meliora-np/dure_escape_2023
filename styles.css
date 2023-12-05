@@ -32,7 +32,7 @@ body.index::before {
     width: 100%;
     height: 100%;
     background: url('images/background-image.jpeg') no-repeat center center fixed; /* Set the background image */
-    background-size: cover; /* This ensures the background image covers the entire container */
+    background-size: cover; /* Zoom and cover the entire container */
     filter: brightness(0.7); /* Adjust the value as needed */
     z-index: -1;
 }
@@ -52,7 +52,7 @@ body.laptop::before {
     width: 100%;
     height: 100%;
     background: url('images/laptop-background-image.png') no-repeat center center fixed; /* Set the background image */
-    background-size: cover; /* This ensures the background image covers the entire container */
+    background-size: cover; /* Zoom and cover the entire container */
     filter: brightness(0.7); /* Adjust the value as needed */
     z-index: -1;
 }
@@ -159,11 +159,10 @@ footer {
 @media (max-width: 600px) {
     body.index::before,
     body.laptop::before {
-        background-size: cover; /* Adjust the size property as needed */
+        background-size: cover; /* Zoom and cover the entire container */
     }
 
     .nav-button {
         font-size: 18px; /* Adjust the font size of the button */
     }
 }
-
