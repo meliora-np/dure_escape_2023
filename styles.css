@@ -1,55 +1,80 @@
+/* Font Imports */
 @font-face {
-    font-family: 'HeirofLightFont'; /* Choose a name for your font */
-    src: local('HeirofLightFont'), url('fonts/HeirofLightRegular.ttf') format('truetype'); /* Adjust the font file path and format */
-} 
+    font-family: 'HeirofLightFont';
+    src: local('HeirofLightFont'), url('fonts/HeirofLightRegular.ttf') format('truetype');
+}
 
 @font-face {
     font-family: 'Cafe24Font';
-    src: local('Cafe24Font'), url('fonts/Cafe24Classictype-v1.1.ttf') format('truetype');
+    src: local('Cafe24Font'), url('fonts/Cafe24Classic.ttf') format('truetype');
 }
 
+/* Body Styles */
 body {
-    font-family: 'HeirofLightFont', 'Cafe24Font';
     margin: 0;
     padding: 0;
-    /* transition: background-color 0.5s;*/ 
 }
 
+
+
+/* Index Page Styles */
 body.index {
-    background-image: url('images/background-image.jpeg'); /* Adjust the filename and extension */
+    font-family: 'HeirofLightFont';
+    background-image: url('images/background-image.jpeg');
 }
 
-body.laptop {
-    background-image: url('images/laptop-background-image.png'); /* Adjust the filename and extension */
-    font-family: 'HeirofLightFont', 'Cafe24Font';
-}
-
-/*
-.background-container {
+body.index::before {
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
-    width: 200%;
-    height: 200%;
-    z-index: -1; /* Place it behind other elements *
-    background-image: url('images/background-image.jpeg'); /* Adjust the filename and extension *
+    width: 100%;
+    height: 100%;
+    background: url('images/background-image.jpeg') no-repeat center center fixed; /* Set the background image */
     background-size: cover;
-    background-position: center;
-    filter: blur(2px); /* Adjust the blur strength *
+    filter: brightness(0.7); /* Adjust the value as needed */
+    z-index: -1;
 }
-*/
 
+/* Laptop Page Styles */
+body.laptop {
+    font-family: 'Cafe24Font';
+    background-image: url('images/laptop-background-image.png');
+}
 
-header {
-    font-family: 'HeirofLightFont', 'Cafe24Font';
+/* Header Styles */
+header.index {
+    font-family: 'HeirofLightFont';
     z-index: 1;
-    ;color: #fff;
+    color: #fff;
     padding: 1em;
     text-align: center;
 }
 
+header.laptop {
+    font-family: 'Cafe24Font';
+    z-index: 1;
+    color: #fff;
+    padding: 1em;
+}
+
+/* Responsive Header Image */
+header img {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%;
+    height: auto;
+    max-height: 80px;
+}
+
+/* Text Styles */
+h1, h2, p, label {
+    color: white;
+    text-align: center;
+}
+
+/* Button Styles */
 button {
-    font-family: 'HeirofLightFont', 'Cafe24Font';
     background-color: #555;
     color: #fff;
     padding: 0.5em;
@@ -57,44 +82,56 @@ button {
     cursor: pointer;
 }
 
+/*
 button:hover {
-    font-family: 'HeirofLightFont', 'Cafe24Font';
     background-color: #777;
 }
+*/
 
+/* Navigation Styles */
 body.index .nav {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center the items horizontally */
+    display: flex;
+    justify-content: center;
 }
 
-body.index .nav-button {
+.nav-button {
     border: none;
     background: none;
     cursor: pointer;
-    padding: 30px;
-    width: 80%; /* Adjust the width as needed */
+    padding: 1em;
+    width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
 }
 
-body.index .nav-button:hover{
+.nav-button:hover {
     background-color: #777;
+    display: flex;
+    justify-content: center;
 }
 
 body.index .nav-button img {
-    width: 80%; /* Make the image fill the width of the button */
-    height: auto; /* Make the image fill the height of the button */
-    
+    width: 80%;
+    height: auto;
 }
 
+/* Main Content Styles */
 main {
-    font-family: 'HeirofLightFont', 'Cafe24Font';
     padding: 1em;
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center the items horizontally */
+    display: flex;
+    justify-content: center;
 }
 
+.answer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+/* Footer Styles */
 footer {
-    font-family: 'HeirofLightFont', 'Cafe24Font';
     color: #fff;
     text-align: center;
     padding: 1em;
@@ -103,15 +140,5 @@ footer {
     width: 100%;
 }
 
-header img {
-    max-width: 100%; /* Ensure the logo is responsive */
-    height: auto;    /* Maintain the aspect ratio */
-    max-height: 80px; /* Set a maximum height, adjust as needed */
-}
 
-@media (max-width: 600px) {
-    body.index .nav-button {
-        width: 80px; /* Set a smaller width for mobile devices */
-        height: 80px; /* Set a smaller height for mobile devices */
-    }
-}
+

@@ -4,25 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laptop Page</title>
+    <title>두레교회 청년부 갓스플랜</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="laptop">
     <header>
         <h1>노트북 도난사건</h1>
-        <!-- You can add any other header content here -->
+        <!-- Add any other header content here -->
     </header>
+
+    <nav>
+        <button class="nav-button" onclick="location.href='index.html'">
+        돌아가기</button>
+    </nav>
 
     <main>
         <section>
-            <h2>Welcome to the Laptop Page!</h2>
-            <p>This is the content of the laptop page.</p>
+            <p>나는...</p>
+
+            <form class="answer-form">
+                <label for="answerInput">Enter your answer:</label>
+                <input type="text" id="answerInput">
+                <button class="submit-button" onclick="checkAnswer()">Submit Answer</button>
+            </form>
+
+            <p id="resultMessage"></p>
         </section>
-        <!-- You can add more sections or content here -->
+        <!-- Add more sections or content here -->
     </main>
 
     <footer>
-        <p>&copy; 2023 dureescape. All rights reserved.</p>
+        <p>&copy; 2023 두레교회 청년부 갓스플랜. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
