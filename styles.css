@@ -186,6 +186,11 @@ footer {
         background-size: cover; /* Zoom and cover the entire container */
     }
 
+    .story-button {
+        display: flex;
+        justify-content: center;
+    }
+
     .story-button button {
         width: 80%; /* Adjust the width of the buttons for mobile */
         max-height: auto;
