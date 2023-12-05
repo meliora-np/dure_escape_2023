@@ -9,26 +9,6 @@
     src: local('Cafe24Font'), url('fonts/Cafe24Classic.ttf') format('truetype');
 }
 
-/* Add your styles for the main page */
-
-.story-button button {
-    background-color: #555;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.story-button button img {
-    max-width: 100%;
-    max-height: 0 auto;
-}
-
-.story-button button:hover {
-    background-color: #777;
-}
-
-
 /* Body Styles */
 body {
     margin: 0;
@@ -109,6 +89,7 @@ h1, h2, p, label, input {
     padding-bottom: 10px;
 }
 
+
 /* Button Styles */
 button {
     background-color: #555;
@@ -127,6 +108,24 @@ button:hover {
     background-color: #777;
 }
 
+/* Add your styles for the main page */
+
+.story-button button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.story-button button img {
+    max-width: 80%;
+    max-height: auto;
+}
+
+.story-button button:hover {
+    background-color: #777;
+}
 
 /* Navigation Styles */
 body.index .nav {
