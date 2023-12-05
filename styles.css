@@ -23,7 +23,7 @@ body {
 /* Index Page Styles */
 body.index {
     font-family: 'HeirofLightFont';
-    background-image: url('images/background-image.jpeg');
+    background-image: url('images/background-image.jpeg') no-repeat center center fixed;
     position: relative;
 }
 
@@ -42,7 +42,7 @@ body.index::before {
 /* Laptop Page Styles */
 body.laptop {
     font-family: 'Cafe24Font';
-    background-image: url('images/laptop-background-image.png');
+    background-image: url('images/laptop-background-image.png') no-repeat center center fixed;
     position: relative;
 }
 
