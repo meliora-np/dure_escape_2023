@@ -112,7 +112,7 @@ button:hover {
     color: #fff;
     cursor: pointer;
     padding: 1em;
-    width: 100%;
+    max-width: none;
 }
 
 .story-button button img {
@@ -175,20 +175,21 @@ footer {
 }
 
 /* Mobile Styles */
-@media (max-width: 200px) {
+@media (max-width: 600px) {
     body.index::before,
     body.laptop::before {
         background-size: cover; /* Zoom and cover the entire container */
     }
 
-     .story-button button {
-        max-width: 80%; /* Remove max-width for mobile */
+    .story-button button {
+        width: 80%; /* Adjust the width of the buttons for mobile */
+        max-width: none; /* Remove max-width for mobile */
         margin-bottom: 20px; /* Set the margin between buttons for mobile */
         padding: 0.5em; /* Adjusted padding for better spacing */
     }
 
     .story-button button img {
         max-width: 80%;
-        max-height: auto; /* Set a maximum height for the button images */
+        max-height: 40px; /* Set a maximum height for the button images */
     }
-} 
+}
