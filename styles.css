@@ -12,22 +12,24 @@
 /* Add your styles for the main page */
 .story-button {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .story-button button {
     background-color: #555;
     color: #fff;
-    padding: 10px;
+    padding: 1em; /* Adjusted padding for better spacing */
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    margin-bottom: 50px;
+    width: 100%; /* Adjusted width to 100% */
 }
 
 .story-button button img {
     max-width: 100%;
     max-height: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    width: 100%;
 }
 
 .story-button button:hover {
@@ -46,6 +48,9 @@ body.index {
     font-family: 'HeirofLightFont';
     background-image: url('images/background-image.jpeg');
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 body.index::before {
@@ -57,7 +62,7 @@ body.index::before {
     height: 100%;
     background: url('images/background-image.jpeg') no-repeat center center fixed; /* Set the background image */
     background-size: cover; /* Zoom and cover the entire container */
-    filter: brightness(0.7); /* Adjust the value as needed */
+    /* filter: brightness(0.7);  Adjust the brightness value as needed */
     z-index: -1;
 }
 
@@ -77,7 +82,7 @@ body.laptop::before {
     height: 100%;
     background: url('images/laptop-background-image.png') no-repeat center center fixed; /* Set the background image */
     background-size: cover; /* Zoom and cover the entire container */
-    filter: brightness(0.7); /* Adjust the value as needed */
+    /* filter: brightness(0.7); Adjust the value as needed */
     z-index: -1;
 }
 
@@ -116,11 +121,11 @@ h1, h2, p, label {
 button {
     background-color: #555;
     color: #fff;
-    padding: 0.5em;
+    padding: 1em; /* Adjusted padding for better spacing */
     border: none;
     cursor: pointer;
-    width: 80%; /* Adjust the width of the buttons as needed */
-    max-width: 300px; /* Set a maximum width if desired */
+    width: 100%; /* Adjusted width to 100% */
+    max-width: 100%; /* Set a maximum width if desired */
 }
 
 /*
@@ -161,8 +166,6 @@ body.index .nav-button img {
 main {
     padding: 1em;
     display: flex;
-    justify-content: center;
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -179,9 +182,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1em;
+    /* Removed fixed width for full width */
     position: fixed;
     bottom: 0;
-    width: 100%;
 }
 
 /* Mobile Styles */
@@ -193,5 +196,15 @@ footer {
 
     .nav-button {
         font-size: 18px; /* Adjust the font size of the button */
+    }
+
+    .story-button {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .story-button button {
+        width: 100%; /* Adjust the width of the buttons for mobile */
+        margin-bottom: 20px; /* Set the margin between buttons for mobile */
     }
 }
