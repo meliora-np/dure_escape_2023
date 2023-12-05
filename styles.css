@@ -187,12 +187,13 @@ footer {
     }
 
     .story-button button {
-        max-width: none; /* Remove max-width for mobile */
+        max-width: 100%; /* Remove max-width for mobile */
         margin-bottom: 20px; /* Set the margin between buttons for mobile */
         padding: 0.5em; /* Adjusted padding for better spacing */
     }
 
     .story-button button img {
-        max-height: 40px; /* Set a maximum height for the button images */
+        max-width: 100%;
+        max-height: auto; /* Set a maximum height for the button images */
     }
 }
