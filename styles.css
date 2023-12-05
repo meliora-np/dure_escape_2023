@@ -188,7 +188,6 @@ footer {
 
     .story-button button {
         width: 80%; /* Adjust the width of the buttons for mobile */
-        max-width: none; /* Remove max-width for mobile */
         margin-bottom: 20px; /* Set the margin between buttons for mobile */
         padding: 0.5em; /* Adjusted padding for better spacing */
     }
