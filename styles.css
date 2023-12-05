@@ -189,23 +189,6 @@ footer {
 
 /* Mobile Styles */
 @media (max-width: 600px) {
-    body.index::before,
-    body.laptop::before {
-        background-size: cover; /* Zoom and cover the entire container */
-    }
-
-    .nav-button {
-        font-size: 18px; /* Adjust the font size of the button */
-        max-width: 80%;
-
-    }
-
-    .story-button {
-        text-align: center;
-        margin-bottom: 50px;
-        max-width: 50%;
-    }
-
     .story-button button {
         width: 80%; /* Adjust the width of the buttons for mobile */
         max-width: none; /* Remove max-width for mobile */
