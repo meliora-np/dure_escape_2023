@@ -115,7 +115,7 @@ button:hover {
 }
 
 .story-button button img {
-    max-width: 80%;
+    max-width: auto;
     max-height: auto;
 }
 
@@ -131,13 +131,11 @@ body.index .nav {
 
 .nav-button {
     border: none;
-    background: none;
+    background-color: #555;
     cursor: pointer;
     padding: 1em;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: auto;
 }
 
 .nav-button:hover {
@@ -172,7 +170,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    font-size: small;
+    font-size: x-small;
 }
 
 /* Mobile Styles */
