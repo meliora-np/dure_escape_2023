@@ -12,7 +12,9 @@
 /* Add your styles for the main page */
 .story-button {
     text-align: center;
-    margin-bottom: 50px;
+    max-width: 50%;
+    max-height: auto;
+    margin-bottom: 20px; /* Increased margin between button and image */
 }
 
 .story-button button {
@@ -22,15 +24,13 @@
     border: none;
     cursor: pointer;
     margin-bottom: 50px;
-    width: 80%; /* Adjusted width to 80% for mobile */
-    max-width: 300px; /* Set a maximum width if desired */
+    max-width: 50%; /* Set a maximum width if desired */
 }
 
 .story-button button img {
-    max-width: 100%;
-    max-height: 50px;
+    max-width: 50%;
+    max-height: auto;
     margin-bottom: 20px; /* Increased margin between button and image */
-    width: 100%;
 }
 
 .story-button button:hover {
@@ -133,11 +133,11 @@ button:hover {
 }
 */
 
-/* Navigation Styles */
+/* Navigation Styles 
 body.index .nav {
     display: flex;
     justify-content: center;
-}
+}*/
 
 /* .nav-button {
     border: none;
@@ -164,7 +164,6 @@ body.index .nav-button img {
 /* Main Content Styles */
 main {
     padding: 1em;
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -181,7 +180,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1em;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
