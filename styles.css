@@ -115,7 +115,7 @@ button:hover {
 }
 
 .story-button button img {
-    max-width: auto;
+    max-width: 80%;
     max-height: auto;
 }
 
