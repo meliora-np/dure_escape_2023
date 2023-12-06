@@ -133,9 +133,7 @@ button:hover {
     max-height: auto;
 }
 
-.story-button button:hover {
 
-}
 
 .next-story-button {
     display: flex;
@@ -196,7 +194,7 @@ footer {
     position: fixed; /* Change to fixed */
     bottom: 0;
     width: 100%;
-    font-size: x-small;
+    font-size: xx-small;
 }
 
 /* Mobile Styles */
