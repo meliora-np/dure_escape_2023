@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>두레교회 청년부 갓스플랜</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body class="laptop">
     <header>
@@ -14,7 +14,7 @@
     </header>
 
     <nav>
-        <button class="nav-button" onclick="location.href='index.html'">
+        <button class="nav-button" onclick="location.href='../index.html'">
         테마 선택으로 돌아가기</button>
     </nav>
 
@@ -24,6 +24,7 @@
     
     <main>
         <section>
+
             <p> 나는 공기업 취업을 준비하는 취준생이다. <br></br>
                 내일은 대망의 1차 면접일이다. <br></br>
                 <br></br>
@@ -45,13 +46,12 @@
 
             </p>
 
-            <form class="answer-form">
-                <label for="answerInput">Enter your answer:</label>
-                <input type="text" id="answerInput">
-                <button class="submit-button" onclick="checkAnswer()">Submit Answer</button>
-            </form>
+            <section class="next-story-button">
+                <button onclick="startLaptopStory()">
+                노트북 찾으러 가기
+                </button>
+            </section>
 
-            <p id="resultMessage"></p>
         </section>
         <!-- Add more sections or content here -->
     </main>
@@ -60,6 +60,6 @@
         <p>&copy; 2023 두레교회 청년부 갓스플랜. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
