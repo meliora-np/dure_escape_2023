@@ -25,7 +25,6 @@ body.index {
     font-family: 'HeirofLightFont';
     background-image: url('images/background-image.jpeg') no-repeat center center fixed;
     position: relative;
-    
 }
 
 body.index::before {
@@ -133,8 +132,7 @@ button:hover {
     max-height: auto;
 }
 
-
-
+/* Next Story Button */
 .next-story-button {
     display: flex;
     justify-content: center;

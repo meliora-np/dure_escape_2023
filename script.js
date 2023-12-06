@@ -2,6 +2,10 @@ function navigateToStory(storyPage) {
     window.location.href = storyPage;
 }
 
+function navigateToNextStory(nextStory) {
+    window.location.href = nextStory;
+}
+
 function checkAnswer() {
     var userInput = document.getElementById('answerInput').value.toLowerCase(); // assuming answers are case-insensitive
     if (userInput === 'correctanswer') {
@@ -52,3 +56,4 @@ function submitAnswer() {
     window.location.href = 'laptop-story-2.html';
     // If incorrect, show a message or handle accordingly
 }
+
