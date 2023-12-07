@@ -18,6 +18,7 @@
 body {
     margin: 0;
     padding: 0;
+    word-break: keep-all
 }
 
 /* Index Page Styles */
@@ -83,14 +84,31 @@ header img {
 }
 
 /* Text Styles */
-h1, h2, p, label, input {
+h1, h2, label, input {
     color: white;
     text-align: center;
     padding-bottom: 10px;
 }
 
 p {
-    font-family: 'DanjungFont'
+    font-family: 'DanjungFont';
+    padding-left: 1em;
+    padding-right: 3em;
+    color: white;
+    padding-bottom: 10px;
+    line-height: 150%
+}
+
+.small-ref-text {
+    font-size: small;
+    color: #a5a5a5;
+    display: block;
+    text-align: center;
+    padding-top: 1em
+}
+
+.small-title {
+    text-align: center;
 }
 
 /* Button Styles */
@@ -98,7 +116,7 @@ button {
     background-color: #555;
     color: #fff;
     padding: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 10em;
     margin-top: 1em;
     border: none;
     cursor: pointer;
