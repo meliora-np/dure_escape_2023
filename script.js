@@ -6,14 +6,14 @@ function navigateToNextStory(nextStory) {
     window.location.href = nextStory;
 }
 
-function checkAnswer() {
+function checkAnswer1() {
     var userInput = document.getElementById('answerInput').value.toLowerCase(); // assuming answers are case-insensitive
     if (userInput === 'correctanswer') {
         // Allow access to the next stage
-        window.location.href = 'next-stage.html';
+        window.location.href = 'laptop-story-3.html';
     } else {
         // Display an error message or take other actions
-        alert('Incorrect answer. Try again.');
+        alert('비밀번호가 맞지 않습니다. 다시 입력해주세요.');
     }
 }
 
@@ -39,21 +39,41 @@ function updateUserProgress(nextStage) {
     localStorage.setItem('userProgress', nextStage);
 } */
 
-
 function displayResult(message) {
     // Display the result message
     document.getElementById("resultMessage").textContent = message;
 }
 
+
 function startLaptopStory() {
-    console.log('startLaptopStory function called');
     window.location.href = 'laptop-story-1.html';
 }
 
-function submitAnswer() {
-    // Logic to check the answer
-    // If correct, navigate to the next stage
-    window.location.href = 'laptop-story-2.html';
-    // If incorrect, show a message or handle accordingly
+function startSpyStory() {
+    window.location.href = 'spy-story-1.html'
 }
 
+function startExamStory() {
+    window.location.href = 'exam-story-1.html'
+}
+
+
+function checkLoginls1() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+  
+    // Combine the username and password into a single string
+    var combinedString = username + password;
+  
+    // Logic to check the answer
+    if (combinedString === 'cafespace20201221') {
+        // Allow access to the next stage
+        navigateToNextStory('laptop-story-2.html');
+    } else {
+        // Display an error message or take other actions
+        alert("아이디나 비밀번호가 잘못되었습니다.");
+        // Clear the input fields
+        document.getElementById('username').value = '';
+        document.getElementById('password').value = '';
+    }
+}
