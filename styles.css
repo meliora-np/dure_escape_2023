@@ -194,10 +194,16 @@ p {
 
 .small-ref-text {
     font-size: small;
-    color: #a5a5a5;
+    color: #ececec;
     display: block;
     text-align: center;
     padding-top: 1em
+}
+
+.warning {
+    color: white; 
+    text-align: center;
+    display: block;
 }
 
 .small-title {
@@ -310,6 +316,21 @@ body.index .nav-button img {
     cursor: pointer
 }
 
+.passcode-container input {
+    font-family: 'LaptopFont';
+    margin: 10px;
+    height: 60px;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.passcodeInput {
+    display: flex;
+    justify-content: center;
+}
 
 .userInput {
     display: flex;
@@ -345,6 +366,7 @@ main {
     padding: 1em;
 }
 
+
 /* Footer Styles */
 footer {
     color: #fff;
@@ -355,6 +377,7 @@ footer {
     width: 100%;
     font-size: xx-small;
 }
+
 
 /* Mobile Styles */
 @media (max-width: 600px) {

@@ -6,7 +6,7 @@ function navigateToNextStory(nextStory) {
     window.location.href = nextStory;
 }
 
-function checkAnswer1() {
+/* function checkAnswer1() {
     var userInput = document.getElementById('answerInput').value.toLowerCase(); // assuming answers are case-insensitive
     if (userInput === 'correctanswer') {
         // Allow access to the next stage
@@ -15,7 +15,7 @@ function checkAnswer1() {
         // Display an error message or take other actions
         alert('비밀번호가 맞지 않습니다. 다시 입력해주세요.');
     }
-}
+} */
 
 // Function to check user progress and redirect accordingly
 /* function checkUserProgress() {
@@ -50,23 +50,23 @@ function startLaptopStory() {
 }
 
 function startSpyStory() {
-    window.location.href = 'spy-story-1.html'
+    window.location.href = 'spy-story-1.html';
 }
 
 function startExamStory() {
-    window.location.href = 'exam-story-1.html'
+    window.location.href = 'exam-story-1.html';
 }
 
 
 function checkLoginls1() {
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+    var usernamels1 = document.getElementById('username').value.toLowerCase();
+    var passwordls1 = document.getElementById('password').value;
   
     // Combine the username and password into a single string
-    var combinedString = username + password;
+    var combinedStringls1 = usernamels1 + passwordls1;
   
     // Logic to check the answer
-    if (combinedString === 'cafespace20201221') {
+    if (combinedStringls1 === 'listencafe20201221') {
         // Allow access to the next stage
         navigateToNextStory('laptop-story-2.html');
     } else {
@@ -76,4 +76,109 @@ function checkLoginls1() {
         document.getElementById('username').value = '';
         document.getElementById('password').value = '';
     }
+};
+
+
+
+let passcodels3 = document.querySelectorAll("passcodeInput");
+
+console.log(passcodels3);
+
+passcodels3.forEach((input, index1) => {
+    input.addEventListener("keyup", (e) => {
+        const currentInputls3 = input, 
+            nextInputls3 = input.nextElementSibling, 
+            prevInputls3 = input.previousElementSibling;
+
+            if(currentInputls3.value.length > 1){
+                currentInputls3.value = "";
+                return;
+            }
+
+            if(e.key === "Backspace"){
+                passcodels3.forEach((input, index2) => {
+                    if(index1 <= index2 && prevInputls3){
+                        input.setAttribute("disabled", true);
+                        currentInputls3.value   = "";
+                        prevInputls3.focus();
+                        prevInputls3.value = "";
+                    }
+                })
+            }
+    });
+});
+
+/* window.addEventListener("load", () => passcodels3[0].focus());
+
+button.addEventListener("click", () => {
+    let verifyls3 = ""; 
+    passcodels3.forEach((input) => {
+        verifyls3 += input.value;
+    });
+    console.log(verify);
+}); */
+
+function checkPasscodels3() {
+    var ist = document.getElementById('ist').value;
+    var sec = document.getElementById('sec').value;
+    var third = document.getElementById('third').value;
+    var fourth = document.getElementById('fourth').value;
+    var fifth = document.getElementById('fifth').value;
+  
+    // Combine the username and password into a single string
+    var combinedStringls3 = ist + sec + third + fourth + fifth;
+    var combinedStringls3Upper = combinedStringls3.toUpperCase();
+  
+    // Logic to check the answer
+    if (combinedStringls3Upper === 'JACOB') {
+        // Allow access to the next stage
+        navigateToNextStory('laptop-story-4.html');
+    } else {
+        // Display an error message or take other actions
+        alert("비밀번호가 잘못되었습니다.");
+        // Clear the input fields
+        document.getElementById('ist').value = '';
+        document.getElementById('sec').value = '';
+        document.getElementById('third').value = '';
+        document.getElementById('fourth').value = '';
+        document.getElementById('fifth').value = '';
+
+        console.log(combinedStringls3Upper);
+    }
+};
+
+function clickEvent(first,last){
+    if(first.value.length){
+    document.getElementById(last).focus();
+    }
 }
+
+
+function checkPasscodels5() {
+    var ist = document.getElementById('ist').value.toUpperCase();
+    var sec = document.getElementById('sec').value;
+    var third = document.getElementById('third').value;
+    var fourth = document.getElementById('fourth').value;
+    var fifth = document.getElementById('fifth').value;
+  
+    // Combine the username and password into a single string
+    var combinedStringls5 = ist + sec + third + fourth + fifth;
+    var combinedStringls5Upper = combinedStringls5.toUpperCase();
+  
+    // Logic to check the answer
+    if (combinedStringls5Upper === 'PETER') {
+        // Allow access to the next stage
+        navigateToNextStory('laptop-story-6.html');
+    } else {
+        // Display an error message or take other actions
+        alert("비밀번호가 잘못되었습니다.");
+        // Clear the input fields
+        document.getElementById('ist').value = '';
+        document.getElementById('sec').value = '';
+        document.getElementById('third').value = '';
+        document.getElementById('fourth').value = '';
+        document.getElementById('fifth').value = '';
+
+        console.log(combinedStringls5Upper);
+    }
+};
