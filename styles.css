@@ -318,8 +318,8 @@ body.index .nav-button img {
 .passcode-container input {
     font-family: 'LaptopFont';
     margin: 5px;
-    height: 60px;
-    width: 50px;
+    height: 60px; 
+    width: 10px;
     border: none;
     border-radius: 10px;
     text-align: center;
@@ -402,14 +402,5 @@ footer {
         max-height: auto;
     }
 
-    .passcode-container input {
-        font-family: 'LaptopFont';
-        margin: 5px;
-        height: 60px;
-        width: 50px;
-        border: none;
-        border-radius: 10px;
-        text-align: center;
-        font-size: 2rem;
-    }
+    
 }
