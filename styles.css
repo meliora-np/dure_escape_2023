@@ -401,4 +401,15 @@ footer {
         max-width: 80%;
         max-height: auto;
     }
+
+    .passcode-container input {
+        font-family: 'LaptopFont';
+        margin: 5px;
+        height: 60px;
+        width: 50px;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 2rem;
+    }
 }
