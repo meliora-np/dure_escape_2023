@@ -273,6 +273,10 @@ body.exam button {
     font-family: 'ExamFont';
 }
 
+.emptyInputButton {
+    margin-bottom: 0px;
+}
+
 /* Navigation Styles */
 body.index .nav {
     display: flex;
@@ -343,6 +347,18 @@ body.index .nav-button img {
 
 .laptop-input {
     font-family: 'LaptopFont';
+    margin: 10px;
+    height: 40px; /* Adjust the height as needed */
+    width: 80%; /* Adjust the width as needed */
+    max-width: 300px; /* Set a maximum width if desired */
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem; /* Adjust the font size as needed */
+}
+
+.spy-input {
+    font-family: 'SpyFont';
     margin: 10px;
     height: 40px; /* Adjust the height as needed */
     width: 80%; /* Adjust the width as needed */
