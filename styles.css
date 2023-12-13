@@ -355,7 +355,7 @@ body.index .nav-button img {
     border-radius: 10px;
     text-align: center;
     font-size: 2rem;
-    max-width: 30px; /* Set a maximum width if needed */
+    max-width: 20px; /* Set a maximum width if needed */
 }
 
 .passcodeInput {
