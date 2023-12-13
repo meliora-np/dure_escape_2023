@@ -329,10 +329,41 @@ body.index .nav-button img {
     text-align: center;
     font-size: 2rem;
     max-width: 30px; /* Set a maximum width if needed */
+}
 
+.spy-passcode-container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.spy-passcode-container button {
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align: center;
+    font-size: medium;
+    cursor: pointer
+}
+
+.spy-passcode-container input {
+    font-family: 'SpyFont';
+    margin: 5px;
+    height: 60px; 
+    width: 30px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+    max-width: 30px; /* Set a maximum width if needed */
 }
 
 .passcodeInput {
+    display: flex;
+    justify-content: center;
+}
+
+.spy-passcodeInput {
     display: flex;
     justify-content: center;
 }
