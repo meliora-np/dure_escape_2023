@@ -286,6 +286,17 @@ function checkPasscodeSs3() {
     }
 };
 
+function checkPasscodeEs7() {
+    var passcodeEs7 = document.getElementById('passcodeEs7').value;
+
+    if (passcodeEs7 === '김시기') {
+        navigateToNextStory('exam-story-8.html');
+    } else {
+        alert("비밀번호가 잘못되었습니다.");
+        document.getElementById('passcodeEs7').value =''
+    }
+};
+
 function checkPasscodeSs4() {
     var ist = document.getElementById('ist').value;
     var sec = document.getElementById('sec').value;
@@ -338,5 +349,59 @@ function checkPasscodeSs6() {
         document.getElementById('fourth').value = '';
         document.getElementById('fifth').value = '';
         document.getElementById('sixth').value = '';
+    }
+};
+
+function checkPasscodeSs8() {
+    var ist = document.getElementById('ist').value;
+    var sec = document.getElementById('sec').value;
+    var third = document.getElementById('third').value;
+    var fourth = document.getElementById('fourth').value;
+    var fifth = document.getElementById('fifth').value;
+    var sixth = document.getElementById('sixth').value;
+
+    // Combine the username and password into a single string
+    var combinedStringSs8 = ist + sec + third + fourth + fifth + sixth;
+
+    // Logic to check the answer
+    if (combinedStringSs8 === '271586') {
+        // Allow access to the next stage
+        navigateToNextStory('spy-story-9.html');
+    } else {
+        // Display an error message or take other actions
+        alert("비밀번호가 잘못되었습니다.");
+        // Clear the input fields
+        document.getElementById('ist').value = '';
+        document.getElementById('sec').value = '';
+        document.getElementById('third').value = '';
+        document.getElementById('fourth').value = '';
+        document.getElementById('fifth').value = '';
+        document.getElementById('sixth').value = '';
+    }
+};
+
+function checkPasscodeEs6() {
+    var ist = document.getElementById('ist').value;
+    var sec = document.getElementById('sec').value;
+    var third = document.getElementById('third').value;
+    var fourth = document.getElementById('fourth').value;
+    var fifth = document.getElementById('fifth').value;
+
+    // Combine the username and password into a single string
+    var combinedStringEs6 = ist + sec + third + fourth + fifth;
+
+    // Logic to check the answer
+    if (combinedStringEs6 === '44533') {
+        // Allow access to the next stage
+        navigateToNextStory('exam-story-7.html');
+    } else {
+        // Display an error message or take other actions
+        alert("비밀번호가 잘못되었습니다.");
+        // Clear the input fields
+        document.getElementById('ist').value = '';
+        document.getElementById('sec').value = '';
+        document.getElementById('third').value = '';
+        document.getElementById('fourth').value = '';
+        document.getElementById('fifth').value = '';
     }
 };
