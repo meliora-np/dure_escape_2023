@@ -261,7 +261,7 @@ function checkPasscodeSs1() {
     var combinedStringSs1 = ist + sec + third + fourth;
 
     // Logic to check the answer
-    if (combinedStringSs1 === '1234') {
+    if (combinedStringSs1 === '2314') {
         // Allow access to the next stage
         navigateToNextStory('spy-story-2.html');
     } else {
