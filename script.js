@@ -404,4 +404,4 @@ function checkPasscodeEs6() {
         document.getElementById('fourth').value = '';
         document.getElementById('fifth').value = '';
     }
-};
+}; 
