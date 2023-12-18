@@ -324,6 +324,17 @@ function checkPasscodeSs4() {
     }
 };
 
+function checkPasscodeSs5() {
+    var passcodeSs5 = document.getElementById('passcodeSs5').value;
+
+    if (passcodeSs5 === '기술 산업자 후원자 명단' || passcodeSs5 === '기술산업자후원자명단' || passcodeSs5 === '기술산업자 후원자 명단' || passcodeSs5 === '기술 산업자 후원자명단') {
+        navigateToNextStory('spy-story-6.html');
+    } else {
+        alert("비밀번호가 잘못되었습니다.");
+        document.getElementById('passcodeSs5').value =''
+    }
+};
+
 function checkPasscodeSs6() {
     var ist = document.getElementById('ist').value;
     var sec = document.getElementById('sec').value;
