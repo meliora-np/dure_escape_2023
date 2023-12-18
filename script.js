@@ -391,7 +391,7 @@ function checkPasscodeEs6() {
     var combinedStringEs6 = ist + sec + third + fourth + fifth;
 
     // Logic to check the answer
-    if (combinedStringEs6 === '44533') {
+    if (combinedStringEs6 === '45533') {
         // Allow access to the next stage
         navigateToNextStory('exam-story-7.html');
     } else {
