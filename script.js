@@ -402,7 +402,7 @@ function checkPasscodeEs6() {
     var combinedStringEs6 = ist + sec + third + fourth + fifth;
 
     // Logic to check the answer
-    if (combinedStringEs6 === '55335') {
+    if (combinedStringEs6 === '55333') {
         // Allow access to the next stage
         navigateToNextStory('exam-story-7.html');
     } else {
