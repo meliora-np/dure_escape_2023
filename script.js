@@ -328,7 +328,7 @@ function checkPasscodeSs5() {
     var passcodeSs5 = document.getElementById('passcodeSs5').value;
 
     if (passcodeSs5 === '기술 산업자 후원자 명단' || passcodeSs5 === '기술산업자후원자명단' || passcodeSs5 === '기술산업자 후원자 명단' || passcodeSs5 === '기술 산업자 후원자명단') {
-        navigateToNextStory('spy-story-6.html');
+        navigateToNextStory('spy-story-5-2.html');
     } else {
         alert("비밀번호가 잘못되었습니다.");
         document.getElementById('passcodeSs5').value =''
@@ -402,7 +402,7 @@ function checkPasscodeEs6() {
     var combinedStringEs6 = ist + sec + third + fourth + fifth;
 
     // Logic to check the answer
-    if (combinedStringEs6 === '45533') {
+    if (combinedStringEs6 === '55335') {
         // Allow access to the next stage
         navigateToNextStory('exam-story-7.html');
     } else {
